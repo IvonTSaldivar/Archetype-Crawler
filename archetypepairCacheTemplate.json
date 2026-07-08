@@ -7,15 +7,14 @@
                     {
                         "key-1": "<archetype 1 name>",
                         "set-2": [
-                            "Feature B",
-                            "Feature C"
+                            "Archetype 2",
+                            "Archetype 3"
                         ]
                     },
                     {
                         "key-1": "<archetype 2 name>",
                         "set-2": [
-                            "Feature A",
-                            "Feature B"
+                            "Archetype 1"
                         ]
                     }
                 ]

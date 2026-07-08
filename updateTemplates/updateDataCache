@@ -1,0 +1,32 @@
+// Read the archetypeDataCache.json file and parse it into a JavaScript object
+
+axios.get("archetypeFlavor.json").then(function (result) {
+    console.log(result);
+    data = result.data["keys-0"];
+
+    let classFeatures = {
+        "alchemist": {"singular": "Discovery", "plural": "Discoveries"},
+        "antipaladin": {"singular": "Mercy", "plural": "Mercy"},
+        "arcanist": {"singular": "Arcanist Exploit", "plural": "Arcanist Exploits"},
+        "barbarian": {"singular": "Rage Power", "plural": "Rage Powers"},
+        "barbarian (unchained)": {"singular": "Rage Power", "plural": "Rage Powers"},
+        "bard": {"singular": "*********Bardic Performance", "plural": "Every single individual bardic performance********"},
+        "monk": {"singular": "Ki Power", "plural": "Ki Powers"}
+    }
+
+    for (let i = 0; i < data.length; i++) {
+        switch (data[i]["key-0"]) {
+            case "Monk":
+            classData = data[i]["hash-1"];
+                break;
+            case "Archetype":
+                archetypeData = data[i]["hash-1"];
+                break;
+            default:
+                console.log("Unknown key-0: " + data[i]["key-0"]);
+        }
+    }
+
+
+
+});

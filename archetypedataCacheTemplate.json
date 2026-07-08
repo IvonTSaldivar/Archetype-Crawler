@@ -1,0 +1,26 @@
+{
+    "keys-0": [
+        {
+            "key-0": "<class name>",
+            "feature-1": "<feature name>",
+            "hash-1": {
+                "keys-1": [
+                    {
+                        "key-1": "<archetype 1 name>",
+                        "set-2": [
+                            "Feature B",
+                            "Feature C"
+                        ]
+                    },
+                    {
+                        "key-1": "<archetype 2 name>",
+                        "set-2": [
+                            "Feature A",
+                            "Feature B"
+                        ]
+                    }
+                ]
+            }
+        }
+    ]
+}
