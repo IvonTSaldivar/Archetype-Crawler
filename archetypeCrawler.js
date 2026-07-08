@@ -24,7 +24,10 @@ var selectedClass;
 
 //This sample data is replaced with the archetypedata cache json file and the archetypeflavor cache json file
 //The archetypedata json file is created from nested hashtables of Classes>Archetypes>Requirements
-var iData = [{ id: 1, name: "Sample Archetype", reqs: "Feats", desc: "This is just a sample archetype." }, { id: 2, name: "Second Archetype", reqs: "Different Feats", desc: "Here's a different archetype" }];
+var iData = [
+    { id: 1, name: "Jul 8 2026", reqs: "", desc: "Added suggestion and mass suggestion to a bunch of Bard archetypes" }, 
+    { id: 2, name: "Jul 7 2026", reqs: "", desc: "Clean up some Monk features" }
+];
 
 //This data needs to be replaced with the classes from archetypedata cache json file
 var options = ['Class 1', 'Class 2', 'Class3'];
@@ -332,4 +335,9 @@ axios.get("archetypeFlavor.json").then(function (result) {
 axios.get("archetypepairCache.json").then(function (result) {
   console.log(result);
   pairs = result.data;
+});
+
+axios.get("patch_notes.json").then(function (result) {
+  console.log(result);
+  patchNotes = result.data;
 });
