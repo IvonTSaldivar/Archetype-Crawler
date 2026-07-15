@@ -27,6 +27,7 @@ var selectedClass;
 var iData = [
     { id: 1, name: "Jul 7 2026", reqs: "Monk", desc: "Clean up some Monk features (no archetype compatibility refresh)" },
     { id: 2, name: "Jul 8 2026", reqs: "Bard", desc: "Added suggestion and mass suggestion to a bunch of Bard archetypes (no archetype compatibility refresh)" }, 
+    { id: 3, name: "Jul 14 2026", reqs: "Bloodrager through Ranger", desc: "Standardize a bunch of different class abilities that were worded slightly differently between archetypes" }, 
 ];
 
 //This data needs to be replaced with the classes from archetypedata cache json file
